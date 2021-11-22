@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* 全体設定 */
+a {
+	text-decoration: none;
+}
+ul, ol {
+	padding: 0;
+}
+dl, ol, ul {
+	margin: 0;
+}
+
+/* Bootstrap拡張 */
+.fs-15 {
+	font-size: 1.5rem;
+}
+
+/* ヘッダー */
+header {
+	height: 200px;/* 確認用 */
+	display: grid;
+	grid-template-columns: 100px 400px 400px 300px;
+}
+.input-group {
+	margin-top: 5px;
+}
+.input-group-btn {
+	background-color: black;
+}
+.btn {
+	color: white;
+}
+
+/* カテゴリボタン */
+#catNav ul {
+	display: flex;
+	width: 900px;
+	margin: 0 auto;
+}
+#catNav li {
+	box-sizing: border-box;
+	width: 210px;
+	padding: 10px;
+	background-color: yellow;/* 確認用 */
+	text-align: center;
+}
+#catNav li:not(:first-child) {
+	margin-left: 25px;
+}
+#catNav a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+/* スライドするバナー */
+#slideBanner {
+	width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#slideBanner ul {
+	width: 2700px;
+	margin-left: -900px;
+}
+#slideBanner li {
+	display: inline-block;
+	width: 900px;
+	height: 200px;
+}
+#slideButton {
+	margin-top: 5px;
+	text-align: center;
+}
+#slideButton span {
+	cursor: pointer;
+	opacity: 0.4;
+}
+#slideButton span:not(:first-child) {
+	margin-left: 5px;
+}
+#slideButton span.slideNow {
+	opacity: 0.6;
+}
+
+/* メインコンテンツ */
+#wrapper {
+	display: grid;
+	grid-template-columns: 25vw 75vw;
+}
+
+/* サイドメニュー */
+#wrapper aside {
+	background-color: #ff9;/* 確認用 */
+}
+
+/* メイン */
+#wrapper main {
+	background-color: #9ff;/* 確認用 */
+}
+
+/* フッター */
+#info {
+	height: 200px;/* 確認用 */
+	background-color: #9f9;/* 確認用 */
+}
+
+#copy {
+	text-align: center;
+	background-color: #cf9;/* 確認用 */
+}
